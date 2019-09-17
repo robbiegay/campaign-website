@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <!-- NAV BAR -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
         <p class="navbar-brand my-0 mr-2">Chidi Anagonye</p>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -41,44 +42,90 @@
             </ul>
         </div>
     </nav>
-    <div class="container-fluid">
-        <!-- IMAGE -->
-        <div class="row no-gutters>">
-            <div class="col p-0">
-                <img class="img mt-2" alt="Chidi Anagonye" src="img/chidi-the-good-place.jpg">
+
+    <!-- BACKGROUND IMG -->
+    <div class="container-fluid mt-3" style="background-image: url(img/chidi-the-good-place.jpg); 
+    background-repeat: no-repeat; min-height: 700px;">
+
+        <!-- Moves all elements below picture -->
+        <div class="row" style="min-height: 750px;">
+            <div class="col-lg">
+                <ul class="float-right text-white pt-5 display-4 d-none d-lg-block">
+                    <li>Professor of Ethics</li>
+                    <li>Seriously, so ethical</li>
+                    <li>Won't flip-flip<sup>*</sup></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="pt-1 text-center text-secondary d-none d-lg-block">
+            <sup>*</sup>Won't ever actually commit to any decisions. Makes not flip-flopping very easy to accomplish!
+        </p>
+
+        <div class="row">
+            <!-- <div class="col d-lg-none" style="min-height: 750px;"></div> -->
+            <div>
+                <ul class="text-black pt-3 px-5 d-lg-none text-justify">
+                    <li class="font-weight-bold">Professor of Ethics</li>
+                    <p>
+                        While alive, Chidi taught Ethics and Moral Philosophy at St. John's University.
+                        Unfortunately, Chidi died before publishing his 3,500 page treatise on Ethics,
+                        but the work has been called "utterly unengaging" and "totally incomprehensible" by
+                        those who have read it. It has been called "lovely" and "great job" but those
+                        who promised to read it but never did.
+                    </p>
+                    <li class="font-weight-bold">Seriously, so ethical</li>
+                    <p>
+                        Once told a white lie about some red cowboy boots. Almost ruined his life...
+                    </p>
+                    <li class="font-weight-bold">Won't flip-flip</li>
+                    <p>
+                        Hate it when politicians flip-flop? Don't worry, Chidi will <strong>never</strong>
+                        flip-flop. This is actually rather easy for Chidi, because he never makes decisions.
+                        Each decision involves a massive amount or moral and ethical deliberation, and while
+                        Chidi will happily provide you with a report of the pros, cons, and moral dilemma of any
+                        large or small choice, he actually avoids making that choice at all costs!
+                    </p>
+                </ul>
             </div>
         </div>
 
         <!-- FORM -->
-        <from>
-            <div class="form-row m-2">
-                <label class="col-1" for="voterName">Name:</label>
-                <input class="col-3" type="text">
-            </div>
 
-            <div class="form-row m-2">
-                <label class="col-1" for="voterName">Email:</label>
-                <input class="col-3" type="text">
+        <form class="m-3">
+            <div class="form-group">
+                <label for="voterName">Name:</label>
+                <input class="form-control" placeholder="Chidi Anagonye" type="text">
             </div>
-            <div class="form-row m-2">
-                <label class="col-1" for="voterName">Message:</label>
-                <input class="col-3" type="text">
+            <div class="form-group">
+                <label for="voterEmail">E-mail:</label>
+                <input class="form-control" placeholder="chidi@vote.com" type="email">
             </div>
-            <button class="btn bg-primary m-2" type="submit>">SUBMIT</button>
-        </from>
+            <div class="form-group">
+                <label for="voterMsg">Message:</label>
+                <input class="form-control" placeholder="Your message" type="text">
+            </div>
+            <div class="row justify-content-center">
+                <button class="btn btn-lg bg-primary col-4 " type="submit>">SUBMIT</button>
+            </div>
+        </form>
 
         <!-- BUTTONS -->
         <div class="row no-gutters>">
-            <button type="button p-0" class="col-md-4 btn btn-lg bg-secondary">REGISTER TO VOTE</button>
-            <button type="button p-0" class="col-md-4 btn btn-lg bg-info">GET INVOLVED</button>
-            <button type="button p-0" class="col-md-4 btn btn-lg bg-danger">DONATE</button>
+            <button type="button" class="col-md-4 btn btn-lg bg-secondary">REGISTER TO VOTE</button>
+            <button type="button" class="col-md-4 btn btn-lg bg-info">GET INVOLVED</button>
+            <button type="button" class="col-md-4 btn btn-lg bg-danger">DONATE</button>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="row">
+            <div class="col bg-light p-2 text-center text-secondary">
+                <p>
+                    Paid for by Chidi Anagonye for Fayette County Constable. Fake Eleanor, Treasurer.
+                </p>
+            </div>
         </div>
     </div>
-
-
-    <!-- At medium size = stack the buttons; change button size to square; add values and vote text -->
-
-
 
 
     <!-- img src: https://www.syfy.com/syfywire/chosen-one-of-the-day-chidi-anagonye-sayer-of-what-->
