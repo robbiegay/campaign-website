@@ -10,12 +10,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <!-- NAV BAR -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
-        <a href="#home" class="navbar-brand my-0 mr-2">Chidi Anagonye</a>
+    <nav id="navStyle" class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <a id="nameLogo" href="#home" class="navbar-brand my-0 mr-2">Chidi Anagonye</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -45,13 +46,13 @@
     </nav>
 
     <!-- BACKGROUND IMG -->
-    <div class="container-fluid mt-3" style="background-image: url(img/chidi-the-good-place.jpg); 
-    background-repeat: no-repeat; min-height: 700px;">
+    <div id="bckImg" class="container-fluid mt-3" style="background-image: url(img/chidi-the-good-place.jpg); 
+    background-repeat: no-repeat; min-height: 700px">
 
         <!-- Moves all elements below picture -->
         <div class="row" style="min-height: 750px;">
             <div class="col-lg">
-                <ul class="float-right text-white pt-5 display-4 d-none d-lg-block">
+                <ul id="valueList" class="float-right text-white pt-5 display-4 d-none d-lg-block">
                     <li>Professor of Ethics</li>
                     <li>Seriously, so ethical</li>
                     <li>Won't flip-flop<sup>*</sup></li>
@@ -61,7 +62,7 @@
 
         <!-- FLIP-FLOP FINE PRINT -->
 
-        <p class="pt-1 text-center text-secondary d-none d-lg-block">
+        <p class="pt-3 text-center text-secondary d-none d-lg-block">
             <sup>*</sup>Won't ever actually commit to a decision. This makes not flip-flopping very easy to accomplish!
         </p>
 
